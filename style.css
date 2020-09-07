@@ -1,0 +1,202 @@
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+/* Jumbotron */
+
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img1.jpg);
+    
+    background-size: cover;
+}
+
+.jumbotron .display-4, .row{
+    text-align: center !important;
+    margin-top: 2px;
+}
+
+.jumbotron img {
+    width: 60%
+}
+
+/* ABOUT */
+.about img {
+    border:none;
+    width: 30%;
+}
+
+.about p {
+    padding-top: 20px;
+;
+    
+}
+
+.about h2 {
+    color: rgb(35, 13, 114);
+    font-size: 30px;
+    font-weight:bold;
+}
+.about h3{
+    color: rgb(35, 13, 114);
+    padding-top: 40px;
+
+}
+
+/* COSTUMER */
+.costumer .title {
+    color: rgb(35, 13, 114);
+    font-size: 45px;
+    font-weight:bold;
+}
+
+.costumer .kartu {
+    color: rgb(35, 13, 114);
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.costumer .card {
+    padding-top: 20px;
+}
+
+.costumer .gambar {
+    width: 80%;
+}
+
+/* Video */
+
+
+/* Comunicate */
+.comunicate .gambar2 {
+    width: 80%;
+}
+
+.comunicate h3  {
+    color: rgb(75, 26, 252);
+    font-size: 20px;
+    font-weight:bold;
+}
+.comunicate h2 {
+    color: rgb(35, 13, 114);
+    font-size: 35px;
+    font-weight:bold;
+}
+.costumer p {
+    font-size: 18px;
+}
+
+/* Contac */
+.contac h3 {
+    color: rgb(75, 26, 252);
+    font-size: 20px;
+    font-weight:bold;
+}
+.contac h2 {
+    color: rgb(35, 13, 114);
+    font-size: 35px;
+    font-weight:bold;
+}
+.contac p {
+    font-size: 18px;
+}
+
+.contac .gambar2 {
+    width: 80%;
+}
+
+
+/* footer */
+.footer {
+    background-color: blueviolet;
+    background-size: 20px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+    /* Video */
+
+    /* NavBar */
+    .nav-brand, .nav-link {
+        color: white !important;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid blue;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        margin-top: -86px;
+    }
+    .jumbotron .display-4, .row{
+        text-align: left !important;
+        margin-top: 20px;
+    }
+    .jumbotron img {
+        width: 70%;
+    }
+
+    /* ABOUT */
+    .about h2 {
+        color: rgb(35, 13, 114);
+        font-size: 50px;
+    }
+    .about h3{
+        color: rgb(35, 13, 114);
+        padding-top: 40px;
+    }
+    .about img {
+        border:none;
+        width: 50%;
+    }
+
+    /* COSTUMER */
+    .costumer .title {
+    color: rgb(35, 13, 114);
+    font-size: 60px;
+    font-weight:bold;
+    text-align: left;
+    }
+
+    .costumer .kartu {
+        color: rgb(35, 13, 114);
+        font-size: 30px;
+        font-weight:bold;
+    }
+
+    .costumer .gambar {
+        width: 100%;
+    }
+
+    /* Video */
+    .video img {
+        vertical-align: middle;
+        border-style: none;
+        border-radius: 10px;
+    }
+
+    /* Comunicate */
+    .comunicate .gambar2 {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer .bg-blue {
+        background-image: rgb(40, 2, 75);
+    }
+}
