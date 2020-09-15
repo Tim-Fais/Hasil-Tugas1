@@ -1,14 +1,18 @@
+
 /* Utility */
 .tombol {
     text-transform: uppercase;
     border-radius: 40px;
+}
+
+.navbar {
+    box-shadow: none;
 }
 /* Jumbotron */
 
 
 .jumbotron {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img1.jpg);
-    
     background-size: cover;
 }
 
@@ -41,8 +45,17 @@
 .about h3{
     color: rgb(35, 13, 114);
     padding-top: 40px;
-
 }
+
+/* Iklan */
+.iklan .item {
+    width: 100%;
+}
+.iklan .owl-dots {
+    display: none;
+}
+
+
 
 /* COSTUMER */
 .costumer .title {
@@ -66,8 +79,21 @@
 }
 
 /* Video */
+.video .wrapper {
+    background: url(img/video-image-02.jpg);
+    height: 12rem;
+    background-size: cover;
+    border-radius: 5px;
 
+}
 
+.video a {
+    align-self: center;
+}
+
+.video a i {
+    padding-top: 19%;
+}
 /* Comunicate */
 .comunicate .gambar2 {
     width: 80%;
@@ -85,6 +111,37 @@
 }
 .costumer p {
     font-size: 18px;
+}
+
+/* Team */
+.anggota .gallery li {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 5px solid rgba(211, 202, 202, 0.8);
+    position: relative;
+}
+
+.anggota .gallery li img, .anggota .gallery li span, .anggota .gallery li {
+    border-radius: 50%
+}
+
+.anggota .gallery li span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(174, 0, 255, 0.651);
+    position: absolute;
+    top: 0;
+    line-height: 150px;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.anggota .gallery li a:hover span {
+    opacity: 1;
 }
 
 /* Contac */
@@ -108,18 +165,12 @@
 
 
 /* footer */
-.footer {
-    background-color: blueviolet;
-    background-size: 20px;
-    color: white;
-    margin-top: 30px;
-    text-align: center;
-}
+
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) { 
-    /* Video */
-
+    /* Animated */
+    
     /* NavBar */
     .nav-brand, .nav-link {
         color: white !important;
@@ -184,10 +235,52 @@
     }
 
     /* Video */
-    .video img {
-        vertical-align: middle;
-        border-style: none;
+
+    .video .wrapper {
+        background: url(img/video-image-02.jpg);
+        height: 30rem;
+        background-size: cover;
         border-radius: 10px;
+    
+    }
+    
+    .video a {
+        align-self: center;
+    }
+    
+    .video a i {
+        margin-left: 50%;
+    }
+
+    /* Team */
+    .anggota .gallery li {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border: 5px solid rgba(211, 202, 202, 0.8);
+        position: relative;
+    }
+
+    .anggota .gallery li img, .anggota .gallery li span, .anggota .gallery li {
+        border-radius: 50%
+    }
+
+    .anggota .gallery li span {
+        display: block;
+        width: 250px;
+        height: 250px;
+        background-color: rgba(174, 0, 255, 0.651);
+        position: absolute;
+        top: 0;
+        line-height: 250px;
+        color: white;
+        text-shadow: 1px 1px 1px gray;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .anggota .gallery li a:hover span {
+        opacity: 1;
     }
 
     /* Comunicate */
@@ -198,5 +291,9 @@
     /* FOOTER */
     .footer .bg-blue {
         background-image: rgb(40, 2, 75);
+    }
+
+    .footer .mb {
+        margin-bottom: 0;
     }
 }
