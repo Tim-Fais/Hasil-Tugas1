@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="Boostrap/css/mdb.min.css" rel="stylesheet"> -->
     <!-- owl carousel -->
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
     <!-- animate -->
     <link rel="stylesheet" href="animate.min.css">
+    <!-- reset -->
+    <link rel="stylesheet" href="Boostrap/css/reset.css">
+    <!-- All -->
+    <link rel="stylesheet" href="Boostrap/css/all.css">
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
     <title>Appside | App Landing pages HTML Templates</title>
@@ -18,7 +28,8 @@
 
 <body> 
     <!-- Navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <section id="Nav" class="Nav">
+    <nav class="navbar navbar-expand-lg navbar-light pading animate__animated animate__fadeInDown">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo-white.png">
@@ -36,59 +47,50 @@
               </div>
             </div>
         </div>  
-    </nav>    
+    </nav>
+  </section>  
     <!-- Navbar End -->
 
     <!-- Jumbotron start -->
+    <section id="home" class="home">
     <div class="jumbotron jumbotron-fluid bg-transparent">
         <div class="container">
             <div class="row text-white justify-content-between">
                 <div class="col-md-6 pt-3">
-                    <h1 class="display-4" style="font-weight:bold;">A better way to connect with your customers</h1>
-                    <p class="lead pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam, iusto pariatur impedit quibusdam vel fugit quos quo rerum quasi?</p>
-                    <div class="btn-wrapper pt-4">
+                    <h1 class="display-4 animate__animated animate__fadeInDown" style="font-weight:bold;">A better way to connect with your customers</h1>
+                    <p class="lead pt-3 animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veniam, iusto pariatur impedit quibusdam vel fugit quos quo rerum quasi?</p>
+                    <div class="btn-wrapper pt-4 animate__animated animate__fadeInDown">
                         <a href="#" class="btn btn-outline-primary btn-lg btn-none mr-4">App Store</a>
                         <a href="#" class="btn btn-outline-light btn-lg">Play Store</a>
                     </div>
                 </div>
 
-                <div class="col-md-5 ">
+                <div class="col-md-5 animate__animated animate__fadeInDown">
                     <img src="img/header-right-image.png" class="img-md pt-4" alt="Responsive image">
                 </div>
             </div>        
         </div>
       </div>
+    </section>
     <!-- Jumbotron end -->
 
     <!-- Iklan -->
-    <div class="sponsor-area gray-bg padding-60">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="brand-carousel">
-                            <div class="single-brand-item">
-                                <img src="img/01.png" alt="brand logo">
-                            </div>
-                            <div class="single-brand-item">
-                                <img src="img/02.png" alt="brand logo">
-                            </div>
-                            <div class="single-brand-item">
-                                <img src="img/03.png" alt="brand logo">
-                            </div>
-                            <div class="single-brand-item">
-                                <img src="img/04.png" alt="brand logo">
-                            </div>
-                            <div class="single-brand-item">
-                                <img src="img/05.png" alt="brand logo">
-                            </div>
-                            <div class="single-brand-item">
-                                <img src="img/06.png" alt="brand logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="iklan" class="iklan bg-light">
+      <div class="container justify-content-center">
+          <div class="row">
+              <div class="col-md-12 mb-3 pt-3">
+                  <div class="owl-carousel owl-theme">
+                      <div class="item"><img src="img/01.png"></div>
+                      <div class="item"><img src="img/02.png"></div>
+                      <div class="item"><img src="img/03.png"></div>
+                      <div class="item"><img src="img/04.png"></div>
+                      <div class="item"><img src="img/05.png"></div>
+                      <div class="item"><img src="img/06.png"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <!-- iklan end -->
 
     <!-- About start -->
@@ -160,11 +162,13 @@
     <!-- Video -->
     <section class="video" id="video">
         <div class="container">
+          <div class="wrapper">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="imge" src="img/video-image-02.jpg">
+                <div class="col-md-12">
+                  <a href="https://youtu.be/b3lgX4S-tTk"><i class="fa fa-play" aria-hidden="true"></i></a>
                 </div>
             </div>
+          </div>
         </div>
     </section>
     <!-- video end -->
@@ -173,7 +177,7 @@
     <section class="comunicate" id="comunicate">
       <div class="container pt-3 mb-5">
         <div class="row justify-content-between">
-          <div class="col-md-5">
+          <div class="col-md-5 pt-4">
             <h3>COMMUNICATE FASTER THAN EVER</h3>
             <h2>Reply to your customers in time</h2>
             <p>Messenger communication consectetur adipiscing elit, sed do eiusmod tempor labore. it now takes seconds to communicate with your customers.</p>
@@ -188,7 +192,7 @@
           <div class="col-md-6">
             <img class="gambar2" src="img/full-width-feature-06.png">
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 pt-5">
             <h3>UNIQUE FEATURES THAT NEVER SEEN</h3>
             <h2>Discover even more possibilities.</h2>
             <p>Messenger communication consectetur adipiscing elit, sed do eiusmod tempor labore. it now takes seconds to communicate with your customers.</p>
@@ -199,12 +203,86 @@
     </section>
     <!-- end Comunicate -->
 
+    <!-- Success Team -->
+    <section id="anggota" class="anggota">
+      <div class="container ">
+        <h1 class="text-center mb-4 pt-3">Success Stories</h1>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="owl-carousel owl-theme">
+                      <div class="item text-center ">
+                        <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_1.JPG">
+                              <span>Fais Firmansyah</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item text-center ">
+                        <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_2.jpeg">
+                              <span>Nabila</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item text-center ">
+                        <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_3.jpeg">
+                              <span>Chika</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item text-center ">
+                        <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_4.JPG">
+                              <span>Fais Firmansyah</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item text-center ">
+                        <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_5.jpeg">
+                              <span>Nabila</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="item text-center ">
+                       <ul class="gallery">
+                          <li>
+                            <a href="">
+                              <img src="img/IMG_6.jpeg">
+                              <span>Chika</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Success end -->
+
     <!-- Contac -->
     <section>
       <div class="contac" id="contac">
-        <div class="container ">
+        <div class="container mt-5">
           <div class="row justify-content-between">
-            <div class="col-sm-5">
+            <div class="col-md-5">
               <form>
                 <h3>CONTACT US</h3>
                 <h2>Get In Touch</h2>
@@ -228,24 +306,77 @@
       </div>
     </section>
     <!-- end -->
+
+    <!-- Footer -->
     <section id="footer" class="footer">
-    <footer class="container-fluid pt-5 bg-blue">
-      <div class="footer-top">
+    <footer class="page-footer bg-dark ">
+      <div class="bg-success">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <a href="index.html">
-                <img src="img/logo-white.png">
-              </a>
-              <p>Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. </p>
+          <div class="row py-4 d-flex align-item-center">
+            <div class="col-md-12 text-center">
+              <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-instagram text-white"></i></a>
             </div>
           </div>
         </div>
       </div>
-      © Copyrights 2020 Appside All rights reserved.
+
+      <div class="container text-center text-md-left mt-5">
+        <div class="row text-white">
+          <div class="col-md-3 mx-auto mv-4 ">
+            <h6 class="text-uppercase font-weight-bold">The provider</h6>
+            <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum cumque mollitia, veritatis et beatae? Veniam soluta pariatur porro distinctio expedita illo odio, fuga quod qui ut beatae, molestiae magni.</p>
+          </div>
+          
+          <div class="col-md-3 mx-auto mv-4 ">
+              <h6 class="text-uppercase font-weight-bold">Products</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+                <ul class="list-unstyled">
+                  <li class="my-2"><a class="text-white" href="#">HTML 5</a></li>
+                  <li class="my-2"><a class="text-white" href="#">CSS 3</a></li>
+                  <li class="my-2"><a class="text-white" href="#">Bootstrap 4</a></li>
+                  <li class="my-2"><a class="text-white" href="#">JavaScript</a></li>
+                </ul>
+          </div>
+          
+          <div class="col-md-3 mx-auto mv-4 ">
+              <h6 class="text-uppercase font-weight-bold">Usefull Links</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+              <ul class="list-unstyled">
+                  <li class="my-2"><a class="text-white" href="#home">Home</a></li>
+                  <li class="my-2"><a class="text-white" href="#">About</a></li>
+                  <li class="my-2"><a class="text-white" href="#">Princing</a></li>
+                  <li class="my-2"><a class="text-white" href="#">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="col-md-3 mx-auto mv-4 ">
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+              <ul class="list-unstyled">
+                  <li class="my-2"><i class="fas fa-home mr-2"></i>Appside</li>
+                  <li class="my-2"><i class="far fa-envelope mr-2"></i>Appsidedeveloper@gmail.com</li>
+                  <li class="my-2"><i class="fas fa-phone mr-2"></i>+62 823 - **** - ****</li>
+                  <li class="my-2"><i class="fas fa-download mr-2"></i>Download</li>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 footer-copyright text-center">
+              <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 100%; height: 2px;">
+              <p class="text-white-50">&copy; Copyright.2020
+                <a class="text-white" href="#">Appside.com</a></p>
+                <p class="text-white-50">Designed by Tim Fais</p>
+          </div>
+        </div>
+      </div>
     </footer>
   </section>
-</div>
+  <!-- footer end -->
 </body>
 <!-- Jquery -->
 <script src="js/jquery-3.5.1.slim.min.js"></script> 
@@ -253,8 +384,12 @@
 <script src="js/popper.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
+<!-- MDB core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 <!-- owlcarousel -->
 <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+<!-- All js -->
+<script src="assets/js/all.js"></script>
 <!-- Js -->
-<link rel="stylesheet" href="js/main.js">
+<script src="js/main.js"></script>
 </html>
